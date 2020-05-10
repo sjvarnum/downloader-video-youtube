@@ -1,0 +1,5 @@
+*.png
+*.mp4
+*.msg
+.vscode
+download_alteryx_videos_from_zoom
