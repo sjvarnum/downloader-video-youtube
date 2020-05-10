@@ -42,15 +42,11 @@ def main():
     elif url:
         playlist = input("Is this a playlist or a video (p/v)? Enter p or v: ")
         if playlist == 'p':
-            playlist = True
             template = f'{download_folder}\\{playlist_template}'
-            # print(template)
         elif playlist == 'v':
-            playlist = False
             template = f'{download_folder}\\{video_template}'
-            # print(template)
         else:
-            print('You need to indicate if this is a playlist or video')
+            sys.exit("\nInvalid input. You need to indicate if this is a playlist or video by entering a p or v.")
 
     run(url, template)
 
