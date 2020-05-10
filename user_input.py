@@ -2,13 +2,6 @@ import os
 import sys
 import youtube_dl
 
-user = os.getlogin()
-home_folder = os.getenv('home')
-output_folder = 'downloads'
-download_folder = os.path.join(home_folder, output_folder)
-video_template = '%(uploader)s/%(title)s.%(ext)s'
-playlist_template = '%(uploader)s/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s'
-
 
 def run(url, template):
 
@@ -32,7 +25,6 @@ def main():
     - Video is downloaded to the users Download folder by default 
     '''
 
-    user = os.getlogin()
     home_folder = os.getenv('home')
     output_folder = 'downloads'
     download_folder = os.path.join(home_folder, output_folder)
