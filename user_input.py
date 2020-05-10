@@ -22,7 +22,11 @@ def main():
     '''
     - Prompt user for URL
     - Prompt user for type (single video or playlist)
-        - Answer with either p for playlist or v for video
+        - Answer with either p for playlist or v for video.
+        - Required since the output template defines where to put
+          playlists versus where to put single videos
+        - Ultimately, any video either single or from a playlist
+          should be placed into a folder for the uploader
     - Video is downloaded to the users Download folder by default 
     '''
 
@@ -46,7 +50,7 @@ def main():
             template = f'{download_folder}\\{video_template}'
             # print(template)
         else:
-            print('You need to indicate if this is a playlist or not')
+            print('You need to indicate if this is a playlist or video')
 
     run(url, template)
 
