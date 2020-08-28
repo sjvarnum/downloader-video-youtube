@@ -3,3 +3,5 @@
 *.msg
 .vscode
 download_alteryx_videos_from_zoom
+sandbox.py
+test_commands.py
