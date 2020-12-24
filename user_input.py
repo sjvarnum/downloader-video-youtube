@@ -30,9 +30,9 @@ def main():
     - Video is downloaded to the users Download folder by default 
     '''
 
-    home_folder = os.getenv('home')
-    output_folder = 'downloads'
-    download_folder = os.path.join(home_folder, output_folder)
+    home_folder = os.environ['HOMEPATH']
+    output_folder = 'Downloads'
+    download_folder = os.path.join('C:\\', home_folder, output_folder)
     video_template = '%(uploader)s/%(title)s.%(ext)s'
     playlist_template = '%(uploader)s/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s'
 
